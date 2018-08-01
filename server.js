@@ -14,8 +14,6 @@ function requestResponseHandler(req, res) {
   console.log(`Request came: ${req.url}`);
   if (req.url === '/') {
     sendResponse('loader.js', 'text/javascript', res)
-  } else {
-    sendResponse(req.url, getContentType(req.url), res);
   }
 }
 
@@ -34,20 +32,4 @@ function sendResponse(url, contentType, res) {
       console.log(`Response: 200 ${file}`);
     }
   })
-}
-
-
-function getContentType(url) {
-  switch (path.extname(url)) {
-    case '.html':
-      return 'text/html';
-    case '.css':
-      return 'text/css';
-    case '.js':
-      return 'text/javascript';
-    case '.json':
-      return 'application/json';
-    default:
-      return 'application/octate-stream';
-  }
 }
