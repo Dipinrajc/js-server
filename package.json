@@ -1,0 +1,22 @@
+{
+  "name": "js-server",
+  "version": "1.0.0",
+  "description": "to start the server",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dipinrajc/js-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dipinrajc/js-server/issues"
+  },
+  "homepage": "https://github.com/Dipinrajc/js-server#readme"
+}
