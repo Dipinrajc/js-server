@@ -12,7 +12,10 @@ httpServer.listen(port, hostname, () => {
 
 function requestResponseHandler(req, res) {
   console.log(`Request came: ${req.url}`);
-  if (req.url === '/') {
+   if (req.url === '/') {
+    sendResponse('index.html', 'text/html', res)
+  }
+  if (req.url === '/loader.js') {
     sendResponse('loader.js', 'text/javascript', res)
   } else {
     sendResponse(req.url, getContentType(req.url), res);
