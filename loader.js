@@ -12,7 +12,7 @@ console.log("Script Loaded");
     link.id = cssId;
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'http://127.0.0.1:4000/custom.css';
+    link.href = 'custom.css';
     link.media = 'all';
     head.appendChild(link);
   }
@@ -82,7 +82,7 @@ console.log("Script Loaded");
         launch_toast(response.error, false);
       }
     };
-    url = 'http://127.0.0.1:3000/get-rating';
+    url = 'http://40.117.140.61/get-rating';
     jsonpCall(url, data, callback);
   }
 
@@ -120,7 +120,7 @@ console.log("Script Loaded");
       }
     };
 
-    url = 'http://127.0.0.1:3000/update-rating';
+    url = 'http://40.117.140.61/update-rating';
     jsonpCall(url, data, callback);
   }
 }();
